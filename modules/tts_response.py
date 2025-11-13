@@ -1,11 +1,10 @@
-# modules/tts_response.py
 from gtts import gTTS
 from io import BytesIO
 
-def tts_bytes(text: str, lang: str = "en") -> bytes:
+def tts_bytes(text: str, lang="en") -> bytes:
     """
-    Convert text to speech using gTTS and return MP3 bytes.
-    This avoids temp file permission issues on Windows.
+    Convert text to speech using gTTS (English or Hindi)
+    Return MP3 bytes for Streamlit playback
     """
     gt_lang = "hi" if lang == "hi" else "en"
     mp3_fp = BytesIO()
