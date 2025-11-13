@@ -1,0 +1,2 @@
+For PowerShell to activate Virtual environment use direct without 'cd'
+--> .\adnix-ai-system\Scripts\Activate.ps1
